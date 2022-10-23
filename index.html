@@ -14,33 +14,63 @@
 </head>
 <body> 
 
-	<div class="box">
-		<a href="#">Sign in</a>
+	<h1></h1>
+	<p id="sumi">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
 
-		<div class="sign_in">
-			<h1>Sign in</h1>
-			<br>
-			<input type="text" name="name" placeholder="Username/Email"><br>
-			<input type="password" name="name" placeholder="Password"><br>
-			<button type="submit">Sign in</button>
-		</div>
-	</div>
+	<p id="nabila">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+
+	<p id="shohag">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+
+	<p id="mim">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+
+	<p id="zahid">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+
+	<p id="jubayer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+
+	<p id="jim">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+
+	<p id="naim">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+
+	<p id="noyon">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
 
 	
 
 
-
-
-
-
 	<script src="assets/js/jquery-3.6.1.min.js"></script>
+
+
 
 	<script>
 		
-		$('.box a').click(function(){
-			$('.box .sign_in').slideToggle();
+		$('p').click(function(){
+			let name =$(this).attr('id');
+			let vaiapu;
+			if(name == 'sumi' || name == 'nabila' ){
+				vaiapu = ' apu';
+			}else{
+				vaiapu = ' vai';
+			}
+
+
+			if(name == 'jubayer' || name == 'sumi' || name == 'naim'){
+				$('h1').html('<span style="color:red">How are you ' + name  +  vaiapu + ' </span>');
+				$(this).attr('dora','khaice');
+			}else{
+				$('h1').html('<span style="color:blue">apni k ' + name + vaiapu + '</span>');
+			}
+
+
 		});
-		
+
 	</script>
 
 
