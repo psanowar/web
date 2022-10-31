@@ -1,24 +1,33 @@
 *{
 
-	margin: 0px;
-	padding: 0px;
-	font-family: candara;
-
+  margin: 0px;
+  padding: 0px;
+  font-family: candara;
+  transition: 1s;
 }
-
-
-
-
-
 
 body{
 
-margin: 100px;
+  margin: 100px;
+}
+
+.log{
+
+  width: 500px;
+  margin: auto;
+  padding: 50px;
 
 }
 
-p{
+.log input{
 
-	margin: 20px;
+  display: block;
+  padding: 10px;
+  border: 1px solid #333;
+  margin-bottom: 3px;
 
+}
+
+.log input[type='submit'] {
+  cursor: pointer;
 }

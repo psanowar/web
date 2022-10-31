@@ -53,19 +53,19 @@
 		
 		$('p').click(function(){
 			let name =$(this).attr('id');
-			let vaiapu;
+			let gender;
 			if(name == 'sumi' || name == 'nabila' ){
-				vaiapu = ' apu';
+				gender = ' apu';
 			}else{
-				vaiapu = ' vai';
+				gender = ' vai';
 			}
 
 
 			if(name == 'jubayer' || name == 'sumi' || name == 'naim'){
-				$('h1').html('<span style="color:yellow">khaichi tore '+'<span style="color:red">' + name + '</span>' +  vaiapu + ' </span>');
+				$('h1').html('<span style="color:yellow">How are you '+'<span style="color:red">' + name + '</span>' +  gender + ' </span>');
 				
 			}else{
-				$('h1').html('<span style="color:blue">sorry ' + name + vaiapu + '</span>');
+				$('h1').html('<span style="color:blue">sorry ' + name + gender + '</span>');
 			}
 
 
